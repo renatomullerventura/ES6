@@ -15,3 +15,7 @@ o -w é usado para o babel observar o arquivo, toda vez que o arquivo for altera
 
 e crie o arquivo .babel
 $ echo '{ "presets": ["es2015"]}' > .babelrc
+
+
+Para visualizar um arquivo .jd
+$ node js/main.js 
