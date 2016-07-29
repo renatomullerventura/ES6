@@ -19,3 +19,15 @@ $ echo '{ "presets": ["es2015"]}' > .babelrc
 
 Para visualizar um arquivo .jd
 $ node js/main.js 
+
+##Babel valores default
+antigamente vc faria
+function test(valueA){
+    var valueB  =   arguments.length <= 1 || arguments[1] === undefined? 4:arguments[1];
+}
+
+com Babel
+
+function test(valueA, valueB = 4){
+    return valueA + valueB;
+}

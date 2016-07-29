@@ -1,8 +1,15 @@
-'use strict';
+"use strict";
 
-var name = 'Guilherme';
-var age = 19;
-//let text = "name: " + name + " age: "+age;
-var text = '\nname: ' + name + ' \nage: ' + age + '\n';
+/*function test(valueA){
+    var valueB  =   arguments.length <= 1 || arguments[1] === undefined? 4:arguments[1];
+    return valueA + valueB;
+}
+*/
 
-console.log(text);
+function test(valueA) {
+    var valueB = arguments.length <= 1 || arguments[1] === undefined ? 4 : arguments[1];
+
+    return valueA + valueB;
+}
+
+console.log(test(8));
