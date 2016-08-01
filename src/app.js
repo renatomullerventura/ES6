@@ -1,29 +1,8 @@
-class People{
-    constructor(name, email, phone){
-        this.name   =   name;
-        this.email  =   email;
-        this.phone  =   phone;
-    }
-    toString(){
-        return  `Name: ${this.name}
-        Email: ${this.email}
-        Phone: ${this.phone}
-        `;
-    }
-}
+let color   =   new Set();
+color.add("red").add("green").add("red");
 
-class Client extends People{
-    constructor(id, name, email, phone){
-        super(name, email, phone);
-        this.id =   id;
-    };
-    toString(){
-        return `
-        id: ${this.id}
-        ${super.toString()}
-        `;
-    }
+if(color.size   === 2 && color.has("red")){
+    for(let key of color.values())
+        console.log(key);
+    
 }
-
-let test    =   new Client(1, "Renato", "re.infotec@gmail.com", "1234567");
-console.log(test.toString());
