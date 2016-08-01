@@ -1,5 +1,8 @@
-let USD =   new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'});
-let BRL =   new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(1234123490871234.1234);
+let US  =   new Intl.DateTimeFormat("en-US", {year: "numeric", month: "long", day: "numeric"});
+let BR  =   new Intl.DateTimeFormat('pt-BR', {year: "numeric", month: "long", day: "numeric"});
+let DE  =   new Intl.DateTimeFormat('de-DE', {year: "numeric", month: "long", day: "numeric"});
+//new Intl.DateTimeFormat("en-US", {weekday: "long", year: "numeric", month: "long", day: "numeric"}).format(Date.now());
 
-console.log(USD.format(1234123490871234.1234));
-console.log(BRL);
+console.log(US.format(Date.now()));
+console.log(BR.format(Date.now()));
+console.log(DE.format(Date.now()));
