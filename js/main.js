@@ -1,10 +1,7 @@
 'use strict';
 
-var number = 123456.34;
-var En = new Intl.NumberFormat('en-US').format(number);
-var De = new Intl.NumberFormat('de-DE').format(number);
-var Pt = new Intl.NumberFormat('Pt-Br').format(number);
+var USD = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+var BRL = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(1234123490871234.1234);
 
-console.log(En);
-console.log(De);
-console.log(Pt);
+console.log(USD.format(1234123490871234.1234));
+console.log(BRL);

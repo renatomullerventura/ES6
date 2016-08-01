@@ -1,8 +1,5 @@
-let number  =   123456.34;
-let En  =   new Intl.NumberFormat('en-US').format(number);
-let De  =   new Intl.NumberFormat('de-DE').format(number);
-let Pt  =   new Intl.NumberFormat('Pt-Br').format(number);
+let USD =   new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'});
+let BRL =   new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(1234123490871234.1234);
 
-console.log(En);
-console.log(De);
-console.log(Pt);
+console.log(USD.format(1234123490871234.1234));
+console.log(BRL);
